@@ -1,0 +1,8 @@
+用java -jar antlr-3.5.3-complete-no-st3.jar myChecker.g         ，產生myCheckerParser.java、myCheckerLexer.java、myChecker.tokens
+用javac -cp antlr-3.5.3-complete-no-st3.jar:. *.java 編譯       ，產生.class檔
+用java -cp antlr-3.5.3-complete-no-st3.jar:. myChecker_test     ，並在後面加上測試用的.c檔執行。
+
+有三個測試檔，已分別附上myChecker_test之輸出。
+test1.c測試變數未宣告、重複宣告、遞增運算子的型別檢查。
+test2.c測試邏輯運算子、算術運算子兩側的型別檢查。
+test3.c測試巢狀邏輯表達式的檢查。

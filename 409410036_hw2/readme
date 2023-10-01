@@ -1,0 +1,5 @@
+用java -jar antlr-3.5.3-complete-no-st3.jar myparser.g     ，產生myparserParser.java、myparserLexer.java、myparse.tokens
+用javac -cp antlr-3.5.3-complete-no-st3.jar:. *.java 編譯  ，產生.class檔
+用java -cp antlr-3.5.3-complete-no-st3.jar:. testParser    ，並在後面加上測試用的.c檔執行。
+
+有5個測試檔，其中input5.c最為複雜，測試了如a+++a--等運算式。

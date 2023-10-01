@@ -1,0 +1,9 @@
+參考教授的Compiler Design (20230227-2)影片，
+用java -jar ../antlr-3.5.3-complete-no-st3.jar   mylexer.g   ，產生mylexer.java、mylexer.tokens
+用javac -cp ../antlr-3.5.3-complete-no-st3.jar:. *.java編譯  ，產生.class檔
+用java  -cp ../antlr-3.5.3-complete-no-st3.jar:. testLexer，並在後面加上測試用的.c檔執行。
+
+input1.c測試函式呼叫、if-else、邏輯運算子、比較運算子、switch-case，
+input2.c測試比較運算子、指派運算子、位元運算子、while，
+input3.c測試for、float、array，
+input4.c測試#include<math.h>、sqrt()。

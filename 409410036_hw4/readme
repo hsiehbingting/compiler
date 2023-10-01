@@ -1,0 +1,8 @@
+用java -jar antlr-3.5.3-complete-no-st3.jar myCompiler.g        ，產生myCompilerParser.java、myCompilerLexer.java、myCompiler.tokens
+用javac -cp antlr-3.5.3-complete-no-st3.jar:. *.java 編譯       ，產生.class檔
+用java -cp antlr-3.5.3-complete-no-st3.jar:. myCompiler_test    ，並在後面加上測試用的.c檔執行，輸出成llvm ir，或輸出至.ll檔，用lli執行。
+
+有三個測試檔：
+1.c測試數學運算。
+2.c測試if、while、for的混用。
+3.c測試巢狀if、巢狀迴圈的檢查。
